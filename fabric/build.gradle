@@ -40,6 +40,9 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
 
+    modImplementation("maven.modrinth:emojiful:1.21-5.1.5")
+    modImplementation("maven.modrinth:midnightlib:1.6.3-fabric")
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 
